@@ -83,10 +83,23 @@ router.put('/withdraw/:id', (req, res, next) => {
       })
 });
 
-// 
+// Delete an account // TODO: Fix deete endpoint which currently draws 404s
+// router.delete('/delete/:id', (req, res, next) => {
+//       console.log("Delete route called for id: " + req.params.id);
+
+//       bankaccountModel.findByIdAndRemove(req.params.id, (error, data) => {
+//             if (error) {
+//                   return next(error)
+//             } else {
+//                   res.json(data)
+//                   console.log(data)
+//             }
+//       })
+//       });
 
 
-module.exports = router;
+
+      module.exports = router;
 
 //Update test 1 FAIL
 // router.put('/update/:id', (req, res) => {

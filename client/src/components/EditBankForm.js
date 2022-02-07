@@ -108,7 +108,7 @@ console.log(`Deposit or Withdrawal : ${accountToBeChangedType}`);
                                           <Form.Check
                                                 type="radio"
                                                 label="Deposit"
-                                                value={Withdraw}
+                                                value={Deposit}
                                                 onChange={handleChangeType}
                                                 name="formHorizontalRadios"
                                                 id="formHorizontalRadios1"
@@ -116,7 +116,7 @@ console.log(`Deposit or Withdrawal : ${accountToBeChangedType}`);
                                           <Form.Check
                                                 type="radio"
                                                 label="Withdrawal"
-                                                value={Deposit}
+                                                value={Withdraw}
                                                 onChange={handleChangeType}
                                                 name="formHorizontalRadios"
                                                 id="formHorizontalRadios2"

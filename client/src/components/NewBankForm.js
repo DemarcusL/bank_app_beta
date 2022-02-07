@@ -9,7 +9,7 @@ const axios = require('axios');
 export default function NewBankForm() {
 
 
-      const [typedNumber, setAcctNumber] = useState(``);
+      const [typedNumber, setAcctNumber] = useState('');
       const [typedType, setAcctType] = useState('');
       const [typedName, setAcctName] = useState('');
       const [typedBalance, setAcctBalace] = useState('');
@@ -59,6 +59,8 @@ export default function NewBankForm() {
 
       const createAccount = async (accountToBeCreated) => {
 
+            // TODO: fix client side create account, it creates a blank object instead of the filled body params
+
             const acctQuery = 'http://localhost:3001/create';
 
             // the first argument is the endpoint, the second argument is what you are sending!
@@ -71,8 +73,8 @@ export default function NewBankForm() {
       }
 
 
-      console.log(accountToBeCreated);
-      console.log(createdAccount);
+      // console.log(accountToBeCreated);
+      // console.log(createdAccount);
 
 
 
@@ -124,10 +126,10 @@ export default function NewBankForm() {
                         </Button>
                   </Form>
 
-                  {/* <h6> New Account Number : {createdAccount.accountNumber} </h6>
+                  <h6> New Account Number : {createdAccount.accountNumber} </h6>
                   <h6> New Account Type : {createdAccount.accountType} </h6>
                   <h6> New Account Name : {createdAccount.accountName} </h6>
-                  <h6> New Account Starting Balance : {createdAccount.accountBalance} </h6> */}
+                  <h6> New Account Starting Balance : {createdAccount.accountBalance} </h6>
 
 
             </div>
